@@ -1,7 +1,11 @@
 import { useState } from 'react';
 import Button from './Button';
 
-export default function AddTask({ onAddTask }: { onAddTask: (text: string) => void }) {
+type AddTaskProps = {
+  onAddTask: (text: string) => void
+}
+
+export default function AddTask({ onAddTask }: AddTaskProps) {
   const [text, setText] = useState('');
   return (
     <>

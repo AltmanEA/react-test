@@ -1,4 +1,4 @@
-import { TaskData } from "../data/task";
+import { TaskData } from "./task";
 
 type Action =
   | { type: 'added'; id: number; text: string }
